@@ -92,6 +92,7 @@
             pkgs.mkShell {
               inherit nativeBuildInputs buildInputs depsBuildBuild;
               packages = with pkgs; [
+                clang
                 lldb
 
                 compiledb
